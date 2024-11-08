@@ -83,7 +83,7 @@ public:
 
 	SqlSelectQueryBuilder& AddFrom(const std::string table)
 	{
-		tables.push_back(table);
+		tables.push_front(table);
 		return *this;
 	}
 
